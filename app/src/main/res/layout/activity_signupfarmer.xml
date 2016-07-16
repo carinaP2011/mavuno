@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nashipaechepkurui.mavuno.Signupfarmer">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="REGISTRATION" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+
+            <EditText
+                android:id="@+id/etname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number" />
+
+            <EditText
+                android:id="@+id/etphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tvpassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password" />
+
+            <EditText
+                android:id="@+id/etpassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:onClick="onSignUpClicked"
+                android:text="SIGNUP" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
